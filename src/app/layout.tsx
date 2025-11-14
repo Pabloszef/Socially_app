@@ -5,6 +5,7 @@ import './globals.css'
 import {ThemeProvider} from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Sidebar from "@/components/Sidebar";
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -42,7 +43,7 @@ export default function RootLayout({children,}: Readonly<{
                         <div className="max-w-7xl mx-auto px-4">
                             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
                                 <div className="hidden lg:block lg:col-span-3">
-                                    sidebar
+                                    <Sidebar />
                                 </div>
                                 <div className="lg:col-span-9">
                                     {children}
