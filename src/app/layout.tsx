@@ -29,20 +29,19 @@ export default function RootLayout({children,}: Readonly<{
     return (
         <ClerkProvider>
             <html lang="en" suppressHydrationWarning>
-            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+            <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
             <ThemeProvider
                 attribute="class"
                 defaultTheme="system"
                 enableSystem
                 disableTransitionOnChange
             >
-                <div className="min-w-screen">
+                <div className="flex flex-col min-h-screen">
                     <Navbar/>
-
-                    <main className="py-8">
+                    <main className="flex-1 py-8">
                         {/*  container to center the content  */}
-                        <div className="max-w-7xl mx-auto px-4">
-                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                        <div className="max-w-7xl mx-auto px-4 h-full">
+                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-full">
                                 <div className="hidden lg:block lg:col-span-3">
                                     <Sidebar/>
                                 </div>

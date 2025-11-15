@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
     return (
         <footer className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 text-white
-        font-mono w-full py-4 px-4 mt-auto md:py-0 border-t border-b">
+        font-mono w-full py-4 px-4 mt-auto md:py-0 border-t">
             <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
                 <p className="text-balance text-center text-sm leading-loose text-muted-foreground
                 md:text-left">
