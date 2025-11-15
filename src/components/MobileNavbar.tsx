@@ -44,7 +44,7 @@ function MobileNavbar() {
                     <SheetHeader>
                         <SheetTitle>Menu</SheetTitle>
                     </SheetHeader>
-                    <nav className="flex flex-col space-y-4 mt-6 w-64 mx-auto">
+                    <nav className="flex flex-col space-y-4 mt-6 w-full mx-auto">
                         <Button variant="ghost" className="flex items-center gap-3 justify-start" asChild>
                             <Link href="/">
                                 <HomeIcon className="w-4 h-4" />
@@ -75,7 +75,7 @@ function MobileNavbar() {
                             </>
                         ) : (
                             <SignInButton mode="modal">
-                                <Button variant="default" className="w-64 mx-auto">
+                                <Button variant="default" className="w-full mx-auto">
                                     Sign In
                                 </Button>
                             </SignInButton>

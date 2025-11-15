@@ -6,6 +6,7 @@ import {ThemeProvider} from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Sidebar from "@/components/Sidebar";
+import {Toaster} from "react-hot-toast";
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -43,7 +44,7 @@ export default function RootLayout({children,}: Readonly<{
                         <div className="max-w-7xl mx-auto px-4">
                             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
                                 <div className="hidden lg:block lg:col-span-3">
-                                    <Sidebar />
+                                    <Sidebar/>
                                 </div>
                                 <div className="lg:col-span-9">
                                     {children}
@@ -51,8 +52,9 @@ export default function RootLayout({children,}: Readonly<{
                             </div>
                         </div>
                     </main>
-                </div>
                     <Footer/>
+                </div>
+                <Toaster />
             </ThemeProvider>
             </body>
             </html>

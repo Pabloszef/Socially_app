@@ -1,7 +1,7 @@
 import React from 'react'
 import {currentUser} from "@clerk/nextjs/server";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
-import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
+import {Avatar, AvatarImage} from "@/components/ui/avatar";
 import {SignInButton, SignUpButton} from "@clerk/nextjs";
 import {Button} from "@/components/ui/button";
 import {getUserByClerkId} from "@/actions/user.action";
@@ -23,7 +23,7 @@ async function Sidebar() {
                 <CardContent className="pt-6">
                     <div className="flex flex-col items-center text-center">
                         <Link
-                            href={`/profile/${authUser.username}`}
+                            href={`/profile/${user.username}`}
                             className="flex flex-col items-center justify-start"
                         >
                             <Avatar className="size-20 border-2">
